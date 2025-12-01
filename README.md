@@ -1,4 +1,4 @@
-# ***🚗 Automotive Distance Monitor (HMI)***
+# ***IIoT Remote Sensor Platform (Automotive HMI Prototype)***
 
 ## Project Overview
 
