@@ -17,15 +17,30 @@ The application serves as a fully functional proof-of-concept for an automotive 
 
 ## ⚙️ Technology Stack
 
-| Technology | Role | Version / Tool |
-| :--- | :--- | :--- |
-| **Language** | Core Language | Java 17+ |
-| **GUI Framework** | Visual Interface | JavaFX |
-| **Build System** | Dependency Management | Maven |
-| **Serial Communication**| COM Port Handling | JSerialComm |
-| **Hardware** | Sensor/Microcontroller | Arduino UNO / HC-SR04 |
+| Technology | Role | Version / Tool         |
+| :--- | :--- |:-----------------------|
+| **Language** | Core Language | Java 17+               |
+| **GUI Framework** | Visual Interface | JavaFX                 |
+| **Build System** | Dependency Management | Maven                  |
+| **Serial Communication**| COM Port Handling | JSerialComm            |
+| **Hardware** | Sensor/Microcontroller | Arduino NANO / HC-SR04 |
 
 ---
+
+## 🔌 Hardware Setup (Arduino Nano)
+
+### HC-SR04 Wiring
+
+Connect the ultrasonic sensor to the **Arduino Nano** according to the following scheme:
+
+| Sensor Pin (HC-SR04) | Arduino Nano Pin  |
+| :--- |:------------------|
+| **VCC** | 5V                |
+| **GND** | GND               |
+| **Trig** | **Digital Pin 7** |
+| **Echo** | **Digital Pin 6** |
+
+[➡️ **View the Arduino Code:**](arduino/park2.0.ino)
 
 ## 🚀 Getting Started
 
@@ -48,7 +63,7 @@ The application serves as a fully functional proof-of-concept for an automotive 
 
 ### 2. Software Setup & Run
 
-1.  **Configure COM Port:** Update the COM port name in the Java source file (`ParktronicFXApp.java`) to match your Arduino's port (e.g., change `"COM5"` to your port).
+1.  **Configure COM Port:** Update the COM port name in the Java source file (`ParktronicApp.java`) to match your Arduino's port (e.g., change `"COM5"` to your port).
 2.  **Build and Run:** Use the Maven command line tool to build the project and launch the JavaFX application:
 
 ```bash
