@@ -27,21 +27,6 @@ The application serves as a fully functional proof-of-concept for an automotive 
 
 ---
 
-## 🔌 Hardware Setup (Arduino Nano)
-
-### HC-SR04 Wiring
-
-Connect the ultrasonic sensor to the **Arduino Nano** according to the following scheme:
-
-| Sensor Pin (HC-SR04) | Arduino Nano Pin  |
-| :--- |:------------------|
-| **VCC** | 5V                |
-| **GND** | GND               |
-| **Trig** | **Digital Pin 7** |
-| **Echo** | **Digital Pin 6** |
-
-[➡️ **View the Arduino Code:**](arduino/park2.0.ino)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -57,9 +42,17 @@ Connect the ultrasonic sensor to the **Arduino Nano** according to the following
 * Upload the prepared Arduino sketch to output the raw distance values (integers followed by newline) to the Serial Monitor at 9600 baud.
 * **Crucially:** Ensure the **Serial Monitor is closed** before running the Java application, as the COM port can only be accessed by one program at a time.
 
+### HC-SR04 Wiring
+Connect the ultrasonic sensor to the **Arduino Nano** according to the following scheme:
 
-[Image of Arduino HC-SR04 connection diagram]
+| Sensor Pin (HC-SR04) | Arduino Nano Pin  |
+| :--- |:------------------|
+| **VCC** | 5V                |
+| **GND** | GND               |
+| **Trig** | **Digital Pin 7** |
+| **Echo** | **Digital Pin 6** |
 
+[➡️ **View the Arduino Code:**](arduino/park2.0.ino)
 
 ### 2. Software Setup & Run
 
